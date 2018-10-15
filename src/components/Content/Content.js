@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {loginUser} from '../../ducks/reducer'
-import Login from './Login'
+import Login from './Login';
+import UpdateName from './UpdateName';
 
 
 class Content extends Component {
@@ -11,7 +12,13 @@ class Content extends Component {
         return (
             <div className='content'>
                 <div>
-                {user ? `${user} is super cool` : <Login login={loginUser}/>}
+                {user ? 
+                <div>
+                    {`${user} is super cool`}
+                    <UpdateName />
+                </div>
+                :
+                <Login login={loginUser}/>}
                 </div>
             </div>
         );
