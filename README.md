@@ -19,3 +19,13 @@
 
 <img src='./example.png'/>
 
+if time we'll look at 
+
+```
+function higherOrderComponent(Component){
+    const message = 'this is my message and it came from the higherOrderComponent component'
+    return function(props){
+        return <Component {...props} message={message} />
+    }         
+} 
+```
