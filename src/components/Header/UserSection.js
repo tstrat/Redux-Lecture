@@ -6,7 +6,7 @@ export default class UserSection extends Component {
         return (
             <div className='user-section'>
                <span>User:</span>
-                <Name />
+                <Name user={this.props.user} />
             </div>
         );
     }

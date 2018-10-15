@@ -21,7 +21,7 @@
 
 if time we'll look at 
 
-```
+```js
 function higherOrderComponent(Component){
     const message = 'this is my message and it came from the higherOrderComponent component'
     return function(props){

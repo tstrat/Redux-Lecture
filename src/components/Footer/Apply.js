@@ -5,7 +5,7 @@ export default class Apply extends Component {
     render() {
         return (
             <div>
-                <Name />
+                <Name user={this.props.user} />
             </div>
         );
     }
